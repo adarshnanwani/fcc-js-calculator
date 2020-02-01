@@ -1,0 +1,197 @@
+/* variables */
+:root {
+  --primary: #d12222;
+  --secondary: #ccc;
+  --back: #333;
+}
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* base styles */
+body {
+  background: var(--secondary);
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+.calculator {
+  background: var(--primary);
+  color: #dddbff;
+}
+.calculator button {
+  background: var(--back);
+}
+
+button {
+  text-align: center;
+  background: none;
+  outline: none;
+}
+
+/* font styles */
+button {
+  color: #fff;
+  font-size: 1.2em;
+}
+footer p {
+  font-size: 0.8em;
+}
+
+
+/* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+.site-nav {
+  margin: 0 20px;
+}
+.site-nav h1 {
+  grid-column: 1/13;
+  grid-row: 1;
+  justify-self: center;
+}
+.main {
+  margin: 20px auto;
+}
+.main h4{
+  grid-row: 2;
+  grid-column: span 12;
+  justify-self: center;;
+}
+.calculator {
+  grid-column: 3/11;
+  width: 100%;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 2px;
+  height: 60vh;
+  box-shadow: 4px 6px 3px rgba(1,1,1, 0.5);
+}
+.calculator section {
+  text-align: right;
+  padding-right: 10px;
+  align-self: center;
+}
+#result {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+#display {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+#clear {
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+#divide {
+  grid-column: 3/4;
+  grid-row: 3/5;
+}
+#multiply {
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+#seven {
+  grid-column: 1/2;
+  grid-row: 5/7;
+}
+#eight {
+  grid-column: 2/3;
+  grid-row: 5/7;
+}
+#nine {
+  grid-column: 3/4;
+  grid-row: 5/7;
+}
+#subtract {
+  grid-column: 4/5;
+  grid-row: 5/7;
+}
+#four {
+  grid-column: 1/2;
+  grid-row: 7/9;
+}
+#five {
+  grid-column: 2/3;
+  grid-row: 7/9;
+}
+#six {
+  grid-column: 3/4;
+  grid-row: 7/9;
+}
+#add {
+  grid-column: 4/5;
+  grid-row: 7/9;
+}
+#one {
+  grid-column: 1/2;
+  grid-row: 9/11;
+}
+#two {
+  grid-column: 2/3;
+  grid-row: 9/11;
+}
+#three {
+  grid-column: 3/4;
+  grid-row: 9/11;
+}
+#equals {
+  grid-column: 4/5;
+  grid-row: 9/13;
+}
+#zero {
+  grid-column: 1/3;
+  grid-row: 11/13;
+}
+#decimal {
+  grid-column: 3/4;
+  grid-row: 11/13;
+}
+footer {
+  margin: 0 20px;
+}
+footer p {
+  grid-column: 1/8;
+}
+footer ul {
+  grid-column: 8/13;
+  display: flex;
+  justify-content: flex-end;
+}
+footer li{
+padding-left: 10px;
+}
+/* tablet styles */
+@media screen and (min-width: 560px) {
+}
+
+/* laptop styles */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
