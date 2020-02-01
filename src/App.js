@@ -1,8 +1,12 @@
 import React from "react";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 export default () => (
-  <>
-    <h1>Welcome to React Parcel Micro App!</h1>
-    <p>Hard to get more minimal than this React app.</p>
-  </>
+  <div>
+    <Navbar />
+    <Main />
+    <Footer />
+  </div>
 );
