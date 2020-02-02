@@ -20,7 +20,7 @@ li {
 
 /* base styles */
 body {
-  background: var(--secondary);
+  background: #ddd;
   font-size: 16px;
   font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
@@ -38,6 +38,7 @@ button {
   background: none;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 button:hover,
 #clear:hover,
@@ -80,14 +81,14 @@ footer p {
   grid-column: 3/11;
   width: 100%;
   max-width: 400px;
-  padding: 5px;
+  padding: 3px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
   gap: 2px;
   height: 60vh;
-  box-shadow: 10px 9px 7px rgba(1, 1, 1, 0.3),
-    -12px -12px 12px rgba(255, 255, 255, 1);
+  box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 1),
+    12px 8px 12px 0 rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
 .calculator section {
