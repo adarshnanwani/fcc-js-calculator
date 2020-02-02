@@ -1,7 +1,7 @@
 /* variables */
 :root {
   --primary: #d12222;
-  --secondary: #ccc;
+  --secondary: #eeeeee;
   --back: #333;
 }
 /* reset */
@@ -22,13 +22,13 @@ li {
 body {
   background: var(--secondary);
   font-size: 16px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
 }
 
 .calculator {
-  background: var(--primary);
-  color: #dddbff;
+  background: var(--secondary);
+  color: var(--primary);
 }
 .calculator button {
   background: var(--back);
@@ -38,6 +38,7 @@ button {
   text-align: center;
   background: none;
   outline: none;
+  border: none;
 }
 
 /* font styles */
@@ -48,7 +49,6 @@ button {
 footer p {
   font-size: 0.8em;
 }
-
 
 /* mobile styles */
 .grid {
@@ -67,21 +67,24 @@ footer p {
 .main {
   margin: 20px auto;
 }
-.main h4{
+.main h4 {
   grid-row: 2;
   grid-column: span 12;
-  justify-self: center;;
+  justify-self: center;
 }
 .calculator {
   grid-column: 3/11;
   width: 100%;
   max-width: 400px;
+  padding: 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
   gap: 2px;
   height: 60vh;
-  box-shadow: 4px 6px 3px rgba(1,1,1, 0.5);
+  box-shadow: 10px 9px 7px rgba(1, 1, 1, 0.3),
+    -12px -12px 12px rgba(255, 255, 255, 1);
+  border-radius: 4px;
 }
 .calculator section {
   text-align: right;
@@ -99,6 +102,7 @@ footer p {
 #clear {
   grid-column: 1/3;
   grid-row: 3/5;
+  background: var(--primary);
 }
 #divide {
   grid-column: 3/4;
@@ -155,6 +159,7 @@ footer p {
 #equals {
   grid-column: 4/5;
   grid-row: 9/13;
+  background: #2F4F4F;
 }
 #zero {
   grid-column: 1/3;
@@ -175,8 +180,8 @@ footer ul {
   display: flex;
   justify-content: flex-end;
 }
-footer li{
-padding-left: 10px;
+footer li {
+  padding-left: 10px;
 }
 /* tablet styles */
 @media screen and (min-width: 560px) {
